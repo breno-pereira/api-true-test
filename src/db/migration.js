@@ -115,12 +115,12 @@ const migrations = {
 
 const data = {
   users: [
-    { name: 'mateus', email: 'mateus.pereira@quero.com.br', password: '123123', document: '407.227.398-85' },
-    { name: 'breno', email: 'breno.pereira@quero.com.br', password: '123123', document: '407.227.398-85' },
-    { name: 'felipe', email: 'felipe.nascimento@quero.com.br', password: '123123', document: '407.227.398-85' },
-    { name: 'Rafael', email: 'rafael.nascimento@quero.com.br', password: '123123', document: '407.227.398-85' }
+    { name: 'mateus', email: 'mateus.pereira@teste.com', password: '123123', document: '407.227.398-85' },
+    { name: 'breno', email: 'breno.pereira@teste.com', password: '123123', document: '407.227.398-85' },
+    { name: 'felipe', email: 'felipe.nascimento@teste.com', password: '123123', document: '407.227.398-85' },
+    { name: 'Rafael', email: 'rafael.nascimento@teste.com', password: '123123', document: '407.227.398-85' }
   ],
-  test: [{ name: 'Prova 1', created_at: '2019-06-01 16:34:00', duration: 60, img: 'https://lever-client-logos.s3.amazonaws.com/349d1c8e-f724-4154-b4a1-10ced99e06e5-1479426290982.png', due_date: '2019-06-01 16:34:00' }],
+  test: [{ name: 'Prova 1', created_at: '2019-06-01 16:34:00', duration: 60, img: 'https://images.educamaisbrasil.com.br/content/superior/instituicao/logo/g/etep-faculdades.png', due_date: '2019-06-01 16:34:00' }],
   question_type: [{ type: 'TEXTO' }, { type: 'MULTIPLA ESCOLHA' }, { type: 'FORMULA' }],
   question: [
     { question: ' A respeito do funcionamento dos néfrons, é correto afirmar que', fk_test: 1, fk_type: 1, created_at: '2019-06-01 16:34:00' },
