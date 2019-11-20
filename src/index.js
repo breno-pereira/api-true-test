@@ -303,7 +303,7 @@ app.get("/get-test/:id", async (req, res) => {
 
 app.get("/create-test", async (req, res) => {
   const random = Math.random() * (1000 - 1) + 1;
-  const queryTest = doInsert("test", { name: 'Prova ' + random.toFixed(0), created_at: '2019-06-01 16:34:00', duration: 60, img: 'https://lever-client-logos.s3.amazonaws.com/349d1c8e-f724-4154-b4a1-10ced99e06e5-1479426290982.png', due_date: '2019-06-01 16:34:00' }, "id");
+  const queryTest = doInsert("test", { name: 'Prova ' + random.toFixed(0), created_at: '2019-06-01 16:34:00', duration: 60, img: 'https://images.educamaisbrasil.com.br/content/superior/instituicao/logo/g/etep-faculdades.png', due_date: '2019-06-01 16:34:00' }, "id");
   const id = await db.query(queryTest);
 
   const id1 = await db.query(doInsert("question", { question: 'A respeito do funcionamento dos néfrons, é correto afirmar que', fk_test: 1, fk_type: id.rows[0].id, created_at: '2019-06-01 16:34:00' }, "id"));
