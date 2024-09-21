@@ -18,7 +18,7 @@ app.get("/user-test-event-get/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const result = await db.query(
-      `SELECT * FROM user_test_event WHERE fk_user_test = ${id}`
+      `SELECT * FROM user_test_event WHERE fk_user_test_bla = ${id}`
     );
     if (!result.rows.length) {
       return res.json(null);
